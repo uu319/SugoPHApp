@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+   <ImageView
+       android:id="@+id/imgHelp"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginBottom="10dp"
+       android:layout_weight="1"
+       android:src="@drawable/wallpaper"/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:textColor="@color/design_default_color_primary"
+        android:layout_weight="6"/>
+
+</LinearLayout>

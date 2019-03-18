@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Eseeker.EseekerPostDocumentActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="@drawable/products"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#CCF0F0F0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:id="@+id/scrollView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="30dp">
+
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:gravity="center_horizontal"
+                        android:padding="7dp"
+                        android:text="Product"
+                        android:fontFamily="@font/champagne"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/txtProdName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="44dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittextstyle_bordered"
+                        android:hint="Product Name"
+                        android:textStyle="italic" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/txtQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="323dp"
+                            android:background="@drawable/edittextstyle_bordered"
+                            android:hint="Quantity  "
+                            android:textStyle="italic"/>
+
+                        <EditText
+                            android:id="@+id/txtUnit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="323dp"
+                            android:background="@drawable/edittextstyle_bordered"
+                            android:hint="Unit of measure"
+                            android:textStyle="italic"
+                            />
+
+                    </LinearLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/txtBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittextstyle_bordered"
+                        android:hint="Budget"
+                        android:textStyle="italic" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edittextstyle_bordered">
+
+                        <ImageButton
+                            android:id="@+id/btnHelp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="right"
+                            android:background="#00000000"
+                            android:src="@drawable/ic_help_black_24dp" />
+
+
+                        <EditText
+                            android:id="@+id/txtDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:gravity="top|left"
+                            android:background="@android:color/transparent"
+                            android:hint="Write more information"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnPostErrand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/final_button"
+                        android:text="Continue"
+                        android:textSize="15dp"
+                        android:textColor="@color/colorWhite" />
+
+                    <View
+                        android:layout_width="match_parent"
+                              android:layout_height="20dp"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

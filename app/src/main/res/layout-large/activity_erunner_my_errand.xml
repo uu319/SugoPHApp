@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eseeker.EseekerErrandFullDetails"
+    tools:layout_editor_absoluteY="81dp"
+    >
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.leinardi.android.speeddial.SpeedDialView
+            android:id="@+id/speedDial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:sdMainFabClosedSrc="@drawable/arrow_up" />
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fabMessage"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_margin="@dimen/fab_margin"-->
+            <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/txtOptionName"
+                        android:text="Loading..."
+                        android:textSize="20dp"
+                        android:fontFamily="@font/champagne"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp">
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgProfpic"
+                                android:layout_width="200dp"
+                                android:layout_height="120dp"
+                                app:civ_border_width="1dp"
+                                app:civ_border_color="@color/azur"
+                                android:layout_gravity="center_horizontal"
+                                android:elevation="1dp"
+                                android:src="@drawable/user"/>
+                            <TextView
+                                android:id="@+id/txtName"
+                                android:textColor="@color/azur"
+                                android:text="Loading..."
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/champagne"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:padding="7dp"
+                                />
+                            <!--<TextView-->
+                                <!--android:id="@+id/txtAddress"-->
+                                <!--android:text="TLoading..."-->
+                                <!--android:layout_gravity="center_horizontal"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content" />-->
+
+
+
+
+
+                    </LinearLayout>
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginLeft="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtDatePublished"
+                            android:text="Date published"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/champagne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/detail_location"/>
+                            <TextView
+                                android:id="@+id/txtCurrentLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CurrentLocation"
+                                android:textSize="18dp"
+                                android:gravity="center_horizontal" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/detail_status"/>
+                            <TextView
+                                android:id="@+id/txtStatus"
+                                android:textSize="18dp"
+                                android:text="status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/detail_time"/>
+                            <TextView
+                                android:id="@+id/txtAgo"
+                                android:text="ago"
+                                android:textSize="18dp"
+                                android:textStyle="italic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/detail_payment"/>
+                        <TextView
+                            android:id="@+id/txtPayment"
+                            android:textSize="18dp"
+                            android:text="payment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                            </LinearLayout>
+
+
+
+
+                        <TextView
+                            android:id="@+id/txtDescription1"
+                            android:text="Desc1"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/champagne"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:text="Additional Description"
+                            android:layout_width="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/champagne"/>
+                        <TextView
+                            android:id="@+id/txtDescription2"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:text="desc2"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/champagne"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnAccept"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:background="@drawable/final_button"
+                            android:gravity="center_horizontal"
+                            android:text="Toggle"
+                            android:textSize="18dp"
+                            android:fontFamily="@font/champagne"
+                            android:textStyle="bold"
+                            android:enabled="false"
+                            android:visibility="invisible"
+                            android:textColor="@color/colorWhite"/>
+                        <Button
+                            android:id="@+id/btnDeny"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/champagne"
+                            android:layout_margin="18dp"
+                            android:background="@drawable/final_button_negative"
+                            android:gravity="center_horizontal"
+                            android:text="Toggle"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:enabled="false"
+                            android:visibility="invisible"
+                            android:textColor="@color/colorWhite"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnToggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/final_button"
+                        android:gravity="center_horizontal"
+                        android:text="Toggle"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/champagne"
+                        android:textStyle="bold"
+                        android:enabled="false"
+                        android:visibility="invisible"
+                        android:textColor="@color/colorWhite"
+                        />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+
+
+
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

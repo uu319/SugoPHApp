@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/errand_layout">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary">
+
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/editSearch2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="Errand name, date, status, erunner"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:fontFamily="@font/champagne"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:drawableEnd="@drawable/search_white"
+        android:drawableRight="@drawable/search_white"
+        android:backgroundTint="@color/azur"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefreshEseekerMyErrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/list_view_background">
+        <ListView
+            android:dividerHeight="0dp"
+            android:id="@+id/errandListview"
+            android:divider="@color/grey2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

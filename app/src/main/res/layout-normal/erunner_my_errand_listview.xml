@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Errand name, date, status, eseeker"
+            android:textColor="@color/grey1"
+            android:textSize="18sp"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:drawableEnd="@drawable/search_white"
+            android:drawableRight="@drawable/search_white"
+            android:backgroundTint="@color/azur"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/float_wallet"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pullToRefreshErunnerListview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp">
+            <ListView
+                android:id="@+id/errandListview"
+                android:layout_width="match_parent"
+                android:divider="@color/grey2"
+                android:layout_height="wrap_content"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

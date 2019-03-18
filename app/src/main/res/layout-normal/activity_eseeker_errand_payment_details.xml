@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Eseeker.EseekerErrandPaymentDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/champagne"
+                android:gravity="center_horizontal"
+                android:padding="7dp"
+                android:text="Payment Details"
+                android:textColor="@color/azur"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/champagne"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                android:textSize="17dp"
+                android:text="Your total fee is composed of a booking fee, rate per hour, and the document's filing price or the bill payment. Booking fee is the default amount set by the admin whenever you post an errand. Rate per hour is the amount you will pay to the eRunner which will increment depending on how much time he/she finishes your errand. This app uses PayPal as our mode of payment. Enjoy the service!"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="20dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/booking_fee"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/champagne"
+                android:gravity="center_horizontal"
+                android:text="Booking Fee"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/txtBookingFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/champagne"
+                android:gravity="center_horizontal"
+                android:text="50 php"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/rate_per_hour"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/champagne"
+                android:gravity="center_horizontal"
+                android:text="Rate per Hour"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/txtRatePerHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/champagne"
+                android:gravity="center_horizontal"
+                android:text="20 php"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnPostErrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/final_button"
+            android:fontFamily="@font/bloomsberg"
+            android:gravity="center_horizontal"
+            android:text="Post Errand"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--tools:context=".Eseeker.EseekerErrandPaymentDetails">-->
+
+<!--<View-->
+    <!--android:id="@+id/view"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--<LinearLayout-->
+    <!--android:id="@+id/linearLayout3"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent">-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView3"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="32dp"-->
+
+            <!--android:gravity="center_horizontal"-->
+            <!--android:padding="7dp"-->
+            <!--android:text="Payment Details"-->
+            <!--android:textColor="@color/azur"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:fontFamily="@font/champagne"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:src="@drawable/booking_fee"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.498"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:fontFamily="@font/champagne"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="Booking Fee"-->
+            <!--android:textSize="20sp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.497"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageView" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtBookingFee"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:fontFamily="@font/champagne"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="50 php"-->
+            <!--android:textSize="40sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.497"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView9" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imageView2"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:src="@drawable/rate_per_hour"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.498"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/txtBookingFee" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textView11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:fontFamily="@font/champagne"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="Rate per Hour"-->
+            <!--android:textSize="20sp"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.537"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/imageView2" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtRatePerHour"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:fontFamily="@font/champagne"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="20 php"-->
+            <!--android:textSize="40sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintHorizontal_bias="0.497"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnPostErrand"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:layout_marginBottom="16dp"-->
+            <!--android:background="@drawable/final_button"-->
+            <!--android:fontFamily="@font/bloomsberg"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="Post Errand"-->
+            <!--android:textColor="#ffffff"-->
+
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+<!--</LinearLayout>-->
+
+
+<!--</android.support.constraint.ConstraintLayout>-->

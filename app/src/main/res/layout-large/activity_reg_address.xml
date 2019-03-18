@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Both.RegName"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp">
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="Address"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/champagne"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <EditText
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="City"
+            android:textColor="@color/grey1"
+            android:textSize="18sp"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/txtStreet"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Street"
+            android:textSize="18sp"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+        <EditText
+            android:id="@+id/txtBrgy"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Barangay"
+            android:textSize="18sp"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/final_button"
+            android:text="Continue"
+            android:textStyle="bold"
+            android:fontFamily="@font/champagne"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+</LinearLayout>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context=".Both.RegAddress">-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/cardView2"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="20dp"-->
+            <!--app:cardCornerRadius="4dp">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/textView4"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="24dp"-->
+                <!--android:text="Address"-->
+                <!--android:textSize="30sp"-->
+                <!--android:textStyle="bold" />-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginRight="15dp"-->
+                <!--android:layout_marginLeft="15dp">-->
+                <!--<EditText-->
+                    <!--android:id="@+id/txtCity"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:background="@drawable/edittextstyle"-->
+                    <!--android:hint="City"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:inputType="textCapWords"-->
+                    <!--android:textSize="13sp"/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txtStreet"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:background="@drawable/edittextstyle"-->
+                    <!--android:hint="Street"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:inputType="textCapWords"-->
+                    <!--android:textSize="13sp"/>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/txtBrgy"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:background="@drawable/edittextstyle"-->
+                    <!--android:hint="Barangay"-->
+                    <!--android:inputType="textCapWords"-->
+                    <!--android:textSize="13sp"/>-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_weight="4">-->
+                <!--<Button-->
+                    <!--android:id="@+id/btnNext"-->
+                    <!--android:layout_width="200dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginBottom="24dp"-->
+                    <!--android:background="@drawable/buttonstyle"-->
+                    <!--android:text="Next"-->
+                    <!--android:textColor="@color/colorWhite"/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        <!--</android.support.v7.widget.CardView>-->
+
+
+<!--</RelativeLayout>-->

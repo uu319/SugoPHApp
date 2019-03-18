@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="fab_message" type="id" />
+    <item name="fab_map" type="id" />
+
+</resources>

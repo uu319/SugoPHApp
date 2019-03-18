@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wallpaper"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:text="What are you canvasing for?"
+        android:layout_margin="30dp"
+        android:textSize="23dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+   <ListView
+       android:id="@+id/listViewOptions"
+       android:layout_width="match_parent"
+       android:dividerHeight="0dp"
+       android:divider="#ffffff"
+       android:layout_height="300dp"></ListView>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="Cancel"
+            android:background="@android:color/transparent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#2F4F4F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

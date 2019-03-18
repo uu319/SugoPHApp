@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "117858578251",
+    "firebase_url": "https://sugophapp.firebaseio.com",
+    "project_id": "sugophapp",
+    "storage_bucket": "sugophapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117858578251:android:66c05945fe8e578a",
+        "android_client_info": {
+          "package_name": "com.example.pikot.sugophapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117858578251-6hpgs7u6sama46g1am8g73720eq04psu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pikot.sugophapp",
+            "certificate_hash": "7de43a56cecc7ffa5061b7556041500957f45305"
+          }
+        },
+        {
+          "client_id": "117858578251-ghn4irkuls003fnjjnc8norlvns9atnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2b-tGFe3s7x356etuC4KrhHcgswlQgGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117858578251-ghn4irkuls003fnjjnc8norlvns9atnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

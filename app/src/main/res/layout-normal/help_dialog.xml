@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="18dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:text="You should provide all the necessary informations precisely to make it easier for the eRunnersto understand your errand request and also to avoid confusion which results to errors."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/champagne"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:text="Pointers below might help you:"/>
+        <TextView
+            android:id="@+id/txtHelp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:padding="5dp"
+
+            android:layout_marginTop="10dp" />
+        <TextView
+            android:id="@+id/txtHelp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/txtHelp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/txtHelp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/champagne"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/final_button"
+            android:text="Back"
+            android:textColor="@color/azur" />
+    </LinearLayout>
+
+
+</LinearLayout>

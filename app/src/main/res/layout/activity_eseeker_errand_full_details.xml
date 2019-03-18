@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Eseeker.EseekerErrandFullDetails"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/wallpaper"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp">
+
+
+
+
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtOptionName"
+                    android:text="Services"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/bloomsberg"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:id="@+id/txtDatePublished"
+                    android:textStyle="italic|bold"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Published on Dec. 21, 2018 at 6:30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <LinearLayout
+        android:background="@drawable/listview_background"
+        android:id="@+id/layoutProfile"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp">
+        <TextView
+        android:id="@+id/txtStatus"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+        android:id="@+id/txtAgo"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <TextView
+        android:id="@+id/txtPayment"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:elevation="1dp"
+        android:src="@mipmap/ic_launcher"/>
+        <TextView
+        android:id="@+id/txtName"
+        android:text="Van Allen Diongzon"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="7dp"
+            android:textSize="20dp"
+        />
+        <TextView
+        android:id="@+id/txtAddress"
+        android:text="Ticad, Bantayan Cebu"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <RatingBar
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:isIndicator="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:id="@+id/layoutDetail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+        android:id="@+id/txtDescription1"
+        android:text=" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+        android:textStyle="italic|bold"
+        android:text="Additional Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+        <TextView
+        android:id="@+id/txtDescription2"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:text=" is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/listview_background"
+        android:gravity="center_horizontal"
+        android:text="Toggle"
+        android:textSize="20dp"
+        android:visibility="invisible"
+            android:textColor="#7ebc59"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

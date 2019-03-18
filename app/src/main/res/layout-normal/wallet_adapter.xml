@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#F0F0F0"
+        android:outlineSpotShadowColor="@color/azur"
+        android:layout_marginLeft="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+    <TextView
+        android:id="@+id/txtWalletName"
+        android:text="Venue"
+        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/champagne"
+        android:textColor="#353333"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/coins"
+            android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/txtWalletAmount"
+        android:text="40php"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/champagne"
+        android:textColor="#353333"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtDate"
+        android:text="December 25, 2018"
+        android:textSize="15dp"
+        android:fontFamily="@font/champagne"
+        android:textStyle="italic"
+        android:textColor="#353333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
